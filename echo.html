@@ -7,18 +7,20 @@
     <title>Document</title>
 </head>
 <script>
+    console.log('Call Me')
     function echo() {
         console.log('Hello')
         let inputhello = document.getElementById('input_hello')
         let text = inputhello.value
         console.log(text)
         console.log(document.getElementById('result').innerHTML)
+        document.getElementById('result').innerHTML = text
     }
 </script>
 
 <body>
     <input id="input_hello" type="text"><button onclick="echo()">Echo</button>
-    <h1>Result</h1>
+    <h1 id="result">Result</h1>
 </body>
 
 </html>
