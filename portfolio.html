@@ -5,19 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>นางสาว ศิริพร พัฒนากุล</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'kanit';
+            font-size: 16pt;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fcbdbd;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            background-color: #89e4ff;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #fff;
+            color: #89e4ff;
+        }
+
+        h2 {
+            font-size: 20pt;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Portfolio ของ อรอนงค์</h1>
-    <div><!--Menu-->
-        <ul>
-            <li><a href="#info">ข้อมูลส่วนตัว</a></li>
-            <li><a href="#study">ประวัติการศึกษา</a></li>
-            <li><a href="#work history">ประสบการณ์การทำงาน</a></li>
-            <li><a href="#hobbys">กิจกรรมและความสนใจ</a></li>
-        </ul>
-    </div>
-    <div id="info"> <!--ข้อมูลส่วนตัว-->
+    <header><!--Header and Menu-->
+        <h1>Portfolio ของ อรอนงค์</h1>
+        <nav><!--Menu-->
+            <ul>
+                <li><a href="#info">ข้อมูลส่วนตัว</a></li>
+                <li><a href="#study">ประวัติการศึกษา</a></li>
+                <li><a href="#work history">ประสบการณ์การทำงาน</a></li>
+                <li><a href="#hobbys">กิจกรรมและความสนใจ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="info"> <!--ข้อมูลส่วนตัว-->
         <h2>ข้อมูลส่วนตัว</h2>
         <img src="girl.jpg" alt="Her image" width="300">
         <ul>
@@ -28,9 +76,9 @@
             <li>สาขาวิชา: วิทยาการสารสนเทศ</li>
             <li>มหาวิทยาลัย: มหาวิทยาลัยบูรพา</li>
         </ul>
-    </div>
+    </section>
 
-    <div id="study"><!--ประวัติการศึกษา-->
+    <section id="study"><!--ประวัติการศึกษา-->
         <h2>ประวัติการศึกษา</h2>
         <ul>
             <li>ระดับมัธยมศึกษา:
@@ -51,9 +99,9 @@
                 </ul>
             </li>
         </ul>
-    </div>
+    </section>
 
-    <div id="work history"><!--ประสบการณ์การทำงาน-->
+    <section id="work history"><!--ประสบการณ์การทำงาน-->
         <h2>ประสบการณ์การทำงาน</h2>
         <ul>
             <li>
@@ -79,9 +127,9 @@
                 </ul>
             </li>
         </ul>
-    </div>
+    </section>
 
-    <div id="hobbys"><!--กิจกรรมและความสนใจ-->
+    <section id="hobbys"><!--กิจกรรมและความสนใจ-->
         <h2>กิจกรรมและความสนใจ</h2>
         <ul>
             <li>กิจกรรมภายในมหาวิทยาลัย:
@@ -102,9 +150,10 @@
                 </ul>
             </li>
         </ul>
-    </div>
-
-
+    </section>
+    <footer>
+        Copyright HHH
+    </footer>
 </body>
 
 </html>
