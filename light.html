@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .light {
+            border-radius: 50%;
+            border-width: 5px;
+            border-style: solid;
+            border-color: gray;
+            width: 100px;
+            height: 100px;
+        }
+
+        .on {
+            background-color: yellow;
+        }
+
+        .off {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="turn()" v-bind:class="{light: true, on: isOn, off: !isOn}"></button>
+    </div>
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const isOn = ref(false)
+                function turn() {
+                    isOn.value = !isOn.value
+                }
+                return {
+                    isOn,
+                    turn
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+
+</html>
