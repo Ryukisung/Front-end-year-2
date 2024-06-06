@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
         .light {
             border-radius: 50%;
@@ -27,6 +29,17 @@
 </head>
 
 <body>
+    <header><!--Header and Menu-->
+        <h1>Portfolio ของ อรอนงค์</h1>
+        <nav><!--Menu-->
+            <ul>
+                <li><a href="portfolio.html#info">ข้อมูลส่วนตัว</a></li>
+                <li><a href="portfolio.html#study">ประวัติการศึกษา</a></li>
+                <li><a href="portfolio.html#work history">ประสบการณ์การทำงาน</a></li>
+                <li><a href="portfolio.html#hobbys">กิจกรรมและความสนใจ</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="app">
         <button @click="turn()" v-bind:class="{light: true, on: isOn, off: !isOn}"></button>
     </div>
