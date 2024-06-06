@@ -10,26 +10,19 @@
 </head>
 
 <body>
-    <div id="app">
-        <input type="text" v-model="message"><button @click="echo()">Echo</button>
-        <div>{{ result }}</div>
-        <div>{{ message }}</div>
-    </div>
-
+    <div id="app"><button @click="inc()">{{ num }}</button></div>
     <script>
         const { createApp, ref } = Vue
 
         createApp({
             setup() {
-                const message = ref('')
-                const result = ref('')
-                function echo() {
-                    result.value = message.value
+                const num = ref(0)
+                function inc() {
+                    num.value++
                 }
                 return {
-                    echo,
-                    result,
-                    message
+                    inc,
+                    num
                 }
             }
         }).mount('#app')
